@@ -1,0 +1,19 @@
+{
+  "name": "tagger_bot",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "express": "^4.13.3",
+    "node-telegram-bot-api": "^0.15.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node . &",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "winthan@live.com",
+  "license": "MIT"
+}
+
