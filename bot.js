@@ -1,5 +1,5 @@
 
-var token = '210636921:AAGruBb2_rONA7y7vScyIjwn3FyGKJL2p-8';
+var token = '2085679107:AAHc2PR6KzxYJ1ZfPP8uoW6vns_4wqfpO6E';
 
 var Bot = require('node-telegram-bot-api');
 bot = new Bot(token, {polling: true });
@@ -10,7 +10,7 @@ var note = {};
 var err = "";
 
 bot.onText(/^\/start/, function (msg, match) {
-bot.sendMessage(msg.chat.id, 'Hi, I’m Tag, an AI-based assistant for Telegram powered by @winthanaung.\n\n You can control me by sending these commands:\n\n /note "your note" - Create your own note.\n /please - Retrieve your saved notes.\n /clear - Clean your notes.\n\nNote:If session expired, the notes are clear automatically.').then(function() {
+bot.sendMessage(msg.chat.id, 'Hi, I’m Tag, an AI-based assistant for Telegram powered by @aliyefh_sos ./ @TolLoper\n\n You can control me by sending these commands:\n\n /note "your note" - Create your own note.\n /please - Retrieve your saved notes.\n /clear - Clean your notes.\n\nNote:If session expired, the notes are clear automatically.').then(function() {
 });
 });
 
@@ -32,12 +32,12 @@ bot.sendMessage(msg.chat.id, note[msg.chat.id]).then(function() {
 
 bot.onText(/^\/note (.+)$/, function (msg, match) {
 if (note[msg.chat.id] == null ) {
-note[msg.chat.id]  =   '\n\n' + msg.text.substring(6).replace('@tagger_bot', '');
+note[msg.chat.id]  =   '\n\n' + msg.text.substring(6).replace('@TaggerTolloperbot', '');
 }
 
 else {
 
-note[msg.chat.id]  +=   '\n\n' + msg.text.substring(6).replace('@tagger_bot', '');
+note[msg.chat.id]  +=   '\n\n' + msg.text.substring(6).replace('@TaggerTolloperbot', '');
 }
 bot.sendMessage(msg.chat.id, note[msg.chat.id]).then(function () {
 });
