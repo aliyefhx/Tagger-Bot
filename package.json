@@ -1,5 +1,5 @@
 {
-  "name": "tagger_bot",
+  "name": "TaggerTolloperbot",
   "version": "0.0.1",
   "description": "",
   "main": "index.js",
@@ -13,7 +13,7 @@
     "start": "node . &",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "winthan@live.com",
+  "author": "@aliyefh_sos",
   "license": "MIT"
 }
 
